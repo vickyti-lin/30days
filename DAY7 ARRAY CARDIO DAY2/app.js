@@ -38,6 +38,6 @@ console.log(commentid);
 // Find the comment with this ID
 // delete the comment with the ID of 823423
 const index = comments.findIndex((comment) => (comment.id === 823423));
-console.log(index);
-const newComments = comments.splice(index, 1);
+console.log(index); // array 位置
+const newComments = comments.splice(index, 1);  // 刪除 （位置, 數量）
 console.table(comments);
