@@ -72,7 +72,7 @@ console.table(alphabetically);
 
 // 8. reduce 練習
 // 加總 例子名稱 出現次數 
-const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
+const data = ['car', 'car', 'truck', 'truck','bicycle', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
 let count = data.reduce(function(obj,item){
     if (!obj[item]){
         obj[item] = 0;

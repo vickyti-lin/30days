@@ -18,7 +18,7 @@ const bands = ['The Plot in You',
 // console.log(sortband); // 按字母排列
 
 function strip(bandName) {
-    return bandName.replace(/^(a |the |an )/i, '').trim();
+    return bandName.replace(/^(a |the |an )/i, '').trim();  // trim()清除空白符
 }  // 回傳新字串 
 // console.log(strip('an old dog')); // old dog
 
@@ -35,4 +35,4 @@ const sortedbands = bands.sort((a, b) => (strip(a) > strip(b)? 1: -1));
 
 document.getElementById("bands").innerHTML = sortedbands
     .map(band => `<li>${band}</li>`)  // 建立新陣列
-    .join("");
+    .join("");  // 將陣列合併成一個字串 並回傳

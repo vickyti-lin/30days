@@ -63,12 +63,12 @@ const person = {
 // console.log(per2);
 // console.log(person); // 原始値變了
 //     // how do we take a copy instead?
-// const per3 = {...person};
+// 1. const per3 = {...person};
 // per3.name = 'Cool';
 // console.log(per3);
 // console.log(person); // 不變
     // We will hopefully soon see the object ...spread
-// const per4 = Object.assign({},person, { number : 99, ege :18});  
+// 2. const per4 = Object.assign({},person, { number : 99, ege :18});  
 // console.log(per4);
 // console.log(person); // 不變
     // Things to note - this is only 1 level deep - both for Arrays and Objects. lodash has a cloneDeep method, but you should think twice before using it.
@@ -92,5 +92,5 @@ de2.social.twitter = '@cool';
 console.log(de2);
 console.log(wes);
 // 沒有變更了
-// JSON.stringify 先將 object 轉成了 string（此時原本的參考點就不復存在了）
+// JSON.stringify 先將 object 轉成了 string（此時原本的參考點就不復存在了）字串化
 // 並透過 JSON.parse 還原
