@@ -20,8 +20,10 @@ function findMatches(wordToMatch, cities) {
 // findMatches('Bos', cities);
 
 function numberWithCommas(x) {
-    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-    // return x.toLocaleString()
+    // return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+    // console.log(typeof x); // 查詢是字串還是數字
+    return Number(x).toLocaleString();
+    
 }
 // Number.prototype.toLocaleString() 返回这个数字在特定语言环境下的表示字符串  如:各個國家 千位逗點數
 
