@@ -3,6 +3,7 @@ const panels = document.querySelectorAll('.panel');
 function toggleOpen(){
     // console.log(this); // 指向 被點擊的object
     this.classList.toggle('open');
+    // .classList.toggle ( String [, force] ) 是取得元素 Class  
 }
 function toggleActive(e){
 
